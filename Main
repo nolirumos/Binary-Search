@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+public class BinarySearch {
+    public static void main(String[] args) {
+        int[] numbers = { 2, 5, 7, 9, 11 };
+        int searchNumber = 7;
+        int index = Arrays.binarySearch(numbers, searchNumber);
+
+        if (index >= 0) {
+            System.out.println("The number " + searchNumber + " is found at index " + index);
+        } else {
+            System.out.println("The number " + searchNumber + " is not found.");
+        }
+    }
+}
